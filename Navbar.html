@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        header{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: yellow;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .logo{
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .logo:hover{
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        ul{
+            display: flex;
+            gap: 30px;
+            font-size: 15px;
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        section{
+            margin-top: 60px;
+            padding: 10px;
+        }
+
+        @media(max-width:848px){
+            nav{
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            ul{
+                gap: 15px;
+                font-size: 13px;
+            }
+            .logo{
+                text-align: center;
+            }
+
+            section{
+                margin-top: 80px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1>LOGO/SITE NAME</h1></div>
+            <div>
+                <ul>
+                    <li><strong><a href="#">Label</a></strong></li>
+                    <li><strong><a href="#">Label</a></strong></li>
+                    <li><strong><a href="#">Label</a></strong></li>
+                    <li><strong><a href="#">Label</a></strong></li>
+                    <li><strong><a href="#">Label</a></strong></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section style="min-height: 300vh;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt at culpa sit aliquam facilis laborum deleniti odit excepturi est ab blanditiis laboriosam totam, veniam qui perferendis porro. Est unde qui aliquid accusamus dolore eos laboriosam eius nostrum voluptatem aperiam, libero autem nam! Consectetur illum quis, natus, laborum atque ut iure incidunt officia modi unde possimus quasi laudantium dicta tempore eos ea. Sed saepe dignissimos, sequi assumenda earum iure blanditiis optio dicta autem mollitia sapiente distinctio nisi magni, porro tenetur vero cum ullam commodi quaerat. Nam, dolorem provident. Quae assumenda ad, sit eaque dolores maiores laborum doloribus amet iste beatae eveniet!
+        </p>
+    </section>
+</body>
+</html>
